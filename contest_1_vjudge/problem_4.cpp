@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+
 int main (){
    
     while(true){
@@ -9,36 +10,27 @@ int main (){
         if(x==0 && y==0 && z==0){
             break ;
         }
-        int total =0 ;
-        int road_morning[x];
-        int road_afternoon[x];
-        for(int i=0 ; i<x ; i++){
-            cin>>road_morning[i];
-        }
-        for(int j=0 ; j<x ; j++){
-            cin>>road_afternoon[j];
-        }
-        // cout<<"Morning route "<<endl;
-        // for(int i=0 ; i<x ; i++){
-        //     cout<<road_morning[i]<<endl;
-        // }
+
+        int morning_route[x];
+        int evening_route[x];
 
         for(int i=0 ; i<x ; i++){
-            total +=road_morning[i];
-            total +=road_afternoon[i];
-        }
-        
-
-      
-      
-        int res = total - x*y ;
-        if(res >= 0 ) {
-            cout<<z*res<<endl ;
-        }
-        else {
-            cout<<0<<endl;
+            cin>>morning_route[i];
+            cin>>evening_route[i];
 
         }
+
+        for(int i=0 ; i<x ; i++){
+            cout<<"Morning "<<morning_route[i]<<" "<<" evening "<< evening_route[i]<<endl;
+        }
+
+
+
+
+
+
+     
+    
 
     }
     

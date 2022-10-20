@@ -34,17 +34,17 @@ int main (){
         cin>>f ;
         // int c = 0 ;
         for(int k =0 ; k<f ; k++){
-        make_wave(n);
-        // c++ ;
-        if(k+1== f){
-            flag1= true ;
-        }
-        if(flag1){
-            
-        }
-        else {
-            cout<<endl;
-        }
+            make_wave(n);
+            // c++ ;
+            if(k+1== f){
+                flag1= true ;
+            }
+            if(flag1){
+                
+            }
+            else {
+                cout<<endl;
+            }
        
 
         }

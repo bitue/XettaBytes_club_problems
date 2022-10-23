@@ -21,8 +21,8 @@ for i in str :
     dict_res[coo] = i_ascii
     coo+=1
 
-# for i , j in dict_res.items():
-#     print(i, j)
+for i , j in dict_res.items():
+    print(i, j)
 
 for i in range(t):
     output =""

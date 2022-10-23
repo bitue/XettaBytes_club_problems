@@ -7,21 +7,8 @@ int main (){
     for(int i=0 ; i<t ; i++){
         string s ;
         cin>>s ;
-        int ko= 0 ;
-        for(int i=0 ; i<s.length(); i++){
-            if(s[i]=='>'){
-                ko++;
-            }
-            else {
-                ko--;
-            }
-        }
-        if(ko!=0){
-            cout<<0<<endl;
-            
-        }
-        else {
-            stack<char> st ;
+        
+        stack<char> st ;
 
         st.push(s[0]);
         int co=0 ;
@@ -48,10 +35,20 @@ int main (){
 
         }
 
-        cout<<co<<endl;
+        if(!st.empty()){
+            if(st.top()=='<'){
+                cout<<0<<endl;
+            }
+            else {
+                cout<<co<<endl;
+            }
+        }
+        else {
+            cout<<co<<endl;
+        }
        
 
-        }
+        
         
 
 

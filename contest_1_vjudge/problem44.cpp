@@ -8,6 +8,7 @@ int main (){
     map<int, int> mp ;
    
     int base = 97 ;
+     
     for(int i=0 ; i<s.length(); i++){
         int ch = int(s[i]);
         mp[i+97] = ch ;
@@ -40,17 +41,23 @@ int main (){
              }
              else {
                 if(res[i]=='_'){
-                    out+=" ";
+                    out+=' ';
                 }
-                else if(res[i]=='!'){
-                    out+='!';
+                else {
+                    out+=res[i];
                 }
-                else if(res[i]=='.'){
-                    out+='.';
-                }
-                else if(res[i]=='?'){
-                    out+='?';
-                }
+                // else if(res[i]=='!'){
+                //     out+='!';
+                // }
+                // else if(res[i]=='.'){
+                //     out+='.';
+                // }
+                // else if(res[i]=='?'){
+                //     out+='?';
+                // }
+                // else if(res[i]==' '){
+                //     out+=' ';
+                // }
 
              }
 

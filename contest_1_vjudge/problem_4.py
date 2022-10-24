@@ -18,7 +18,7 @@ for i in range (26):
 coo = 97
 for i in str :
     i_ascii = ord(i)
-    dict_res[coo] = i_ascii
+    dict_res[coo] = i_ascii 
     coo+=1
 
 for i , j in dict_res.items():

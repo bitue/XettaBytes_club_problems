@@ -3,7 +3,7 @@ using namespace std ;
 
 int f91(int x){
     if(x <=100){
-        cout<<"Y"<<endl;
+       
         return f91(f91(x+11));
     }
     else {
@@ -17,8 +17,7 @@ int main (){
         cin>>n ;
         if(n!=0){
             int t =  f91(n);
-        cout<<t <<endl;
-
+            cout<<"f91("<<n<<") = " << t <<endl;
         }
         else {
             break;
